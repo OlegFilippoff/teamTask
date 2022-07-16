@@ -7,8 +7,10 @@ public class Player {
     private String name;
 
     /** информация о том, в какую игру сколько часов было сыграно
+<<<<<<< HEAD
     ключ - игра
     значение - суммарное количество часов игры в эту игру */
+
     private Map<Game, Integer> playedTime = new HashMap<>();
 
     public Player(String name) {
@@ -20,16 +22,19 @@ public class Player {
     }
 
     /** добавление игры игроку
+<<<<<<< HEAD
     если игра уже была, никаких изменений происходить не должно */
     public void installGame(Game game) {
         playedTime.put(game, 0);
     }
 
     /** игрок играет в игру game на протяжении hours часов
+<<<<<<< HEAD
     об этом нужно сообщить объекту-каталогу игр, откуда была установлена игра
     также надо обновить значения в мапе игрока, добавив проигранное количество часов
     возвращает суммарное количество часов, проигранное в эту игру.
     если игра не была установлена, то надо выкидывать RuntimeException */
+
     public int play(Game game, int hours) {
         game.getStore().addPlayTime(name, hours);
         if (playedTime.containsKey(game)) {
@@ -59,4 +64,6 @@ public class Player {
     public Game mostPlayerByGenre(String genre) {
         return null;
     }
+
 }
+
