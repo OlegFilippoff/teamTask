@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ru.netology.GameStoreTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.114 s <<< FAILURE! - in ru.netology.GameStoreTest
-shouldCompareEqualPlayedTime  Time elapsed: 0.022 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <Aaron, Bob> but was: <Aaron>
-	at ru.netology.GameStoreTest.shouldCompareEqualPlayedTime(GameStoreTest.java:157)
-
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in ru.netology.GameStoreTest
