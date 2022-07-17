@@ -26,7 +26,7 @@ public class GameStore {
     }
 
     /**
-     * Проверяет наличие игры в каталоге и возврашает true
+     * Проверяет наличие игры в каталоге и возвращает true
      * если игра есть и false иначе
      */
     public boolean containsGame(Game game) {
@@ -53,7 +53,7 @@ public class GameStore {
 
     /**
      * Ищет имя игрока, который играл в игры этого каталога больше всего
-     * времени. Если игроков нет, то возвращется null
+     * времени. Если игроков нет, то возвращается null
      */
     public String getMostPlayer() {
         int mostTime = 1;
@@ -64,6 +64,7 @@ public class GameStore {
                 mostTime = playerTime;
                 bestPlayer = playerName;
             }
+
         }
         return bestPlayer;
     }
@@ -73,7 +74,8 @@ public class GameStore {
      * за играми этого каталога
      */
     public int getSumPlayedTime() {
-
         return 0;
     }
 }
+
+

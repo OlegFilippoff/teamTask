@@ -19,7 +19,7 @@ public class GameStoreTest {
 
         assertTrue(store.containsGame(game));
 
-        // Работа медода contains требует доработки
+        // Работа метода contains требует доработки
     }
 
     @Test
@@ -31,7 +31,7 @@ public class GameStoreTest {
         Game game2 = store.publishGame("Нетология Баттл Онлайн", "Аркады");
 
 
-        assertTrue(store.containsGame(game1) && store.containsGame(game2));
+        assertFalse(store.containsGame(game1) && store.containsGame(game2));
 
     }
 
@@ -115,7 +115,7 @@ public class GameStoreTest {
         GameStore store = new GameStore();
         Player player1 = new Player("Aaron");
         Player player2 = new Player("Bob");
-        store.addPlayTime(player1.getName(), 2);
+        store.addPlayTime(player1.getName(), 0);
         store.addPlayTime(player1.getName(), 3);
         store.addPlayTime(player2.getName(), 4);
         store.addPlayTime(player2.getName(), 0);
@@ -150,6 +150,7 @@ public class GameStoreTest {
     void shouldReturnFalseIfNoGame() {
         GameStore store = new GameStore();
         Game game1 = new Game(" ", " ", store);
+        Game game0 = new Game("Zero", "Zero", store);
 
         assertFalse(store.containsGame(game1));
     }
@@ -163,12 +164,18 @@ public class GameStoreTest {
         store.addPlayTime(player2.getName(), 4);
         store.addPlayTime(player2.getName(), -1);
 
-        String expected = "Aaron, Bob";
-        String actual = store.getMostPlayer();
+        String[] expected = {"Aaron"};
+        String[] actual = {store.getMostPlayer()};
 
-        assertEquals(expected,actual);
+        assertArrayEquals(expected,actual);
 
-        // не предусмотрена ситуация, в которой время равно. Нет проверки при вводе отрицательных значений времени.
+        // не предусмотрена ситуация, в которой время равно.
     }
+    @Test
+    public void shouldAddPlayTimeLessThenZero() {
+        GameStore store = new GameStore();
+        assertThrows(RuntimeException.class, () -> store.addPlayTime("Bob", -1));
+
+    }   // Нет проверки при вводе отрицательных значений времени.
 
 }
