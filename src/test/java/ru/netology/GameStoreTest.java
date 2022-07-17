@@ -161,10 +161,10 @@ public class GameStoreTest {
         Player player2 = new Player("Bob");
         store.addPlayTime(player1.getName(), 1);
         store.addPlayTime(player1.getName(), 2);
-        store.addPlayTime(player2.getName(), 4);
-        store.addPlayTime(player2.getName(), -1);
+        store.addPlayTime(player2.getName(), 2);
+        store.addPlayTime(player2.getName(), 1);
 
-        String[] expected = {"Aaron"};
+        String[] expected = {"Aaron", "Bob"};
         String[] actual = {store.getMostPlayer()};
 
         assertArrayEquals(expected,actual);
