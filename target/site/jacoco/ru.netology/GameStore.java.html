@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GameStore.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">javaqateam</a> &gt; <a href="index.source.html" class="el_package">ru.netology</a> &gt; <span class="el_source">GameStore.java</span></div><h1>GameStore.java</h1><pre class="source lang-java linenums">package ru.netology;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+<span class="fc" id="L8">public class GameStore {</span>
+<span class="fc" id="L9">    private List&lt;Game&gt; games = new ArrayList&lt;&gt;();</span>
+
+    /**
+     * Информация о том, какой игрок сколько играл в игры этого каталога
+     * Ключ - имя игрока
+     * Значение - суммарное количество часов в игры этого каталога
+     */
+<span class="fc" id="L16">    private Map&lt;String, Integer&gt; playedTime = new HashMap&lt;&gt;();</span>
+
+    /**
+     * Создание объекта игры с заданными заголовком и жанром
+     * Каждый объект игры помнит объект каталога, которому она принадлежит
+     */
+    public Game publishGame(String title, String genre) {
+<span class="fc" id="L23">        Game game = new Game(title, genre, this);</span>
+<span class="fc" id="L24">        games.add(game);</span>
+<span class="fc" id="L25">        return game;</span>
+    }
+
+    /**
+     * Проверяет наличие игры в каталоге и возврашает true
+     * если игра есть и false иначе
+     */
+    public boolean containsGame(Game game) {
+<span class="pc bfc" id="L33" title="All 2 branches covered.">        for (int i = 0; i &lt; games.size(); i++) {</span>
+<span class="pc bpc" id="L34" title="1 of 2 branches missed.">            if (games.get(i).equals(game)) {</span>
+<span class="fc" id="L35">                return true;</span>
+            }
+        }
+<span class="fc" id="L38">        return false;</span>
+    }
+
+    /**
+     * Регистрирует количество времени, которое проиграл игрок
+     * за игрой этого каталога. Игрок задаётся по имени. Время должно
+     * суммироваться с прошлым значением для этого игрока
+     */
+    public void addPlayTime(String playerName, int hours) {
+<span class="fc bfc" id="L47" title="All 2 branches covered.">        if (playedTime.containsKey(playerName)) {</span>
+<span class="fc" id="L48">            playedTime.put(playerName, playedTime.get(playerName) + hours);</span>
+        } else {
+<span class="fc" id="L50">            playedTime.put(playerName, hours);</span>
+        }
+<span class="fc" id="L52">    }</span>
+
+    /**
+     * Ищет имя игрока, который играл в игры этого каталога больше всего
+     * времени. Если игроков нет, то возвращется null
+     */
+    public String getMostPlayer() {
+<span class="fc" id="L59">        int mostTime = 1;</span>
+<span class="fc" id="L60">        String bestPlayer = null;</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">        for (String playerName : playedTime.keySet()) {</span>
+<span class="fc" id="L62">            int playerTime = playedTime.get(playerName);</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">            if (playerTime &gt; mostTime) {</span>
+<span class="fc" id="L64">                mostTime = playerTime;</span>
+<span class="fc" id="L65">                bestPlayer = playerName;</span>
+            }
+<span class="fc" id="L67">        }</span>
+<span class="fc" id="L68">        return bestPlayer;</span>
+    }
+
+    /**
+     * Суммирует общее количество времени всех игроков, проведённого
+     * за играми этого каталога
+     */
+    public int getSumPlayedTime() {
+<span class="fc" id="L76">        int playedTimeSum = 0;</span>
+<span class="fc bfc" id="L77" title="All 2 branches covered.">        for (String playerName : playedTime.keySet()</span>
+        ) {
+<span class="fc" id="L79">            playedTimeSum = playedTimeSum + playedTime.get(playerName);</span>
+<span class="fc" id="L80">        }</span>
+<span class="fc" id="L81">        return playedTimeSum;</span>
+
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

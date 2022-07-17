@@ -7,6 +7,7 @@
     <list default="true" id="bb4fa0bf-a1c7-42c4-a6c7-b48d570e4504" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/GameStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/GameStore.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/GameStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/GameStoreTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/netology/GameStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/netology/GameStore.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
@@ -19,6 +20,9 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/ru.netology.GameStoreTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ru.netology.GameStoreTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/ru.netology.PlayerTest.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/ru/netology/GameStoreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/netology/GameStoreTest.class" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/netology/GameStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/netology/GameStore.class" afterDir="false" />
+>>>>>>> 8be551402fd790a5fe22daa46349e8989e50e42d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +60,13 @@
       <recent name="D:\study\Netology\teamTask\.idea" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.GameStoreTest.shouldCompareEqualPlayedTime">
     <configuration name="GameStoreTest.shouldAddDuplicated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="JUnit.GameStoreTest.shouldAddGame">
+    <configuration name="GameStoreTest.publishBlankGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 8be551402fd790a5fe22daa46349e8989e50e42d
       <module name="teamTask" />
       <extension name="coverage">
         <pattern>
@@ -89,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameStoreTest.shouldAddPlayerTimeToTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="teamTask" />
+    <configuration name="GameStoreTest.shouldAddGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaqateam" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.netology.*" />
@@ -99,7 +108,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
-      <option name="METHOD_NAME" value="shouldAddPlayerTimeToTime" />
+      <option name="METHOD_NAME" value="shouldAddGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +148,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.GameStoreTest.shouldCompareEqualPlayedTime" />
         <item itemvalue="JUnit.GameStoreTest.shouldAddPlayTimeLessThenZero" />
         <item itemvalue="JUnit.GameStoreTest.shouldAddDuplicated" />
         <item itemvalue="JUnit.GameStoreTest.shouldReturnFalseIfNoGame" />
         <item itemvalue="JUnit.GameStoreTest.shouldAddPlayerTimeToTime" />
+=======
+        <item itemvalue="JUnit.GameStoreTest.shouldAddGame" />
+        <item itemvalue="JUnit.GameStoreTest.shouldReturnAllPlayedTimeSum" />
+        <item itemvalue="JUnit.GameStoreTest.shouldFindTheMostPlayerTime" />
+        <item itemvalue="JUnit.GameStoreTest.shouldReturnFalseIfNoGame" />
+        <item itemvalue="JUnit.GameStoreTest.publishBlankGame" />
+>>>>>>> 8be551402fd790a5fe22daa46349e8989e50e42d
       </list>
     </recent_temporary>
   </component>
