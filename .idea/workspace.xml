@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb4fa0bf-a1c7-42c4-a6c7-b48d570e4504" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/GameStoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/GameStoreTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,14 +27,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\study\Netology\teamTask" />
@@ -43,8 +44,8 @@
       <recent name="D:\study\Netology\teamTask\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameStoreTest.returnNullMostPlayer">
-    <configuration name="GameStoreTest.publishNoGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GameStoreTest.shouldReturnAllPlayedTimeSum">
+    <configuration name="GameStoreTest.publishBlankGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teamTask" />
       <extension name="coverage">
         <pattern>
@@ -54,13 +55,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
-      <option name="METHOD_NAME" value="publishNoGame" />
+      <option name="METHOD_NAME" value="publishBlankGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameStoreTest.returnNullMostPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameStoreTest.shouldAddPlayerTimeToTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teamTask" />
       <extension name="coverage">
         <pattern>
@@ -70,23 +71,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
-      <option name="METHOD_NAME" value="returnNullMostPlayer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameStoreTest.shouldCompareEqualPlayedTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="teamTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
-      <option name="METHOD_NAME" value="shouldCompareEqualPlayedTime" />
+      <option name="METHOD_NAME" value="shouldAddPlayerTimeToTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,6 +88,22 @@
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
       <option name="METHOD_NAME" value="shouldFindTheMostPlayerTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameStoreTest.shouldReturnAllPlayedTimeSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teamTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
+      <option name="METHOD_NAME" value="shouldReturnAllPlayedTimeSum" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameStoreTest.returnNullMostPlayer" />
-        <item itemvalue="JUnit.GameStoreTest.shouldCompareEqualPlayedTime" />
+        <item itemvalue="JUnit.GameStoreTest.shouldReturnAllPlayedTimeSum" />
         <item itemvalue="JUnit.GameStoreTest.shouldFindTheMostPlayerTime" />
         <item itemvalue="JUnit.GameStoreTest.shouldReturnFalseIfNoGame" />
-        <item itemvalue="JUnit.GameStoreTest.publishNoGame" />
+        <item itemvalue="JUnit.GameStoreTest.publishBlankGame" />
+        <item itemvalue="JUnit.GameStoreTest.shouldAddPlayerTimeToTime" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +164,22 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="8" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/netology/GameStoreTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/netology/GameStoreTest.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="ru.netology.Player" memberName="playedTime" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

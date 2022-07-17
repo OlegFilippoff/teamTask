@@ -48,6 +48,20 @@ public class GameStoreTest {
     }
 
     @Test
+    void shouldReturnAllPlayedTimeSum() {
+        GameStore store = new GameStore();
+        Player player1 = new Player("Aaron");
+        Player player2 = new Player("Bob");
+        store.addPlayTime(player1.getName(), 5);
+        store.addPlayTime(player2.getName(), 3);
+
+        int actual = store.getSumPlayedTime();
+        int expected = 8;
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void shouldAddPlayerTimeLessThenOneHour() {
         GameStore store = new GameStore();
         Player player1 = new Player("Aaron");
@@ -101,8 +115,8 @@ public class GameStoreTest {
         GameStore store = new GameStore();
         Player player1 = new Player("Aaron");
         Player player2 = new Player("Bob");
-        store.addPlayTime(player1.getName(), 1);
         store.addPlayTime(player1.getName(), 2);
+        store.addPlayTime(player1.getName(), 3);
         store.addPlayTime(player2.getName(), 4);
         store.addPlayTime(player2.getName(), 0);
 
