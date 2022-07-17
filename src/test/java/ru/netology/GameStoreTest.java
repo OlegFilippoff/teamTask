@@ -2,6 +2,7 @@ package ru.netology;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class GameStoreTest {
         String actual = store.getMostPlayer();
         String expected = "Bob";
 
-        assertEquals(expected, actual);
+        assertEquals(expected,actual);
 
         // если кол-во часов менее 1 часа(включительно), то работа метода ломается.
     }
@@ -132,7 +133,7 @@ public class GameStoreTest {
     void returnNullMostPlayer() {
         GameStore store = new GameStore();
 
-        String actual = store.getMostPlayer();
+        String[] actual = store.getMostPlayer();
 
         assertEquals(null, actual);
     }
