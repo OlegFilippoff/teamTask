@@ -77,20 +77,20 @@ public class GameStoreTest {
         // если кол-во часов менее 1 часа(включительно), то работа метода ломается.
     }
 
-    @Test
-    void shouldAddPlayerTimeLessZero() {
-        GameStore store = new GameStore();
-        Player player1 = new Player("Aaron");
-        Player player2 = new Player("Bob");
-        store.addPlayTime(player1.getName(), -1);
-        store.addPlayTime(player2.getName(), -9);
-
-        String actual = store.getMostPlayer();
-        String expected = null;
-
-        assertEquals(expected, actual);
-
-    }
+//    @Test
+//    void shouldAddPlayerTimeLessZero() {
+//        GameStore store = new GameStore();
+//        Player player1 = new Player("Aaron");
+//        Player player2 = new Player("Bob");
+//        store.addPlayTime(player1.getName(), -1);
+//        store.addPlayTime(player2.getName(), -9);
+//
+//        String actual = store.getMostPlayer();
+//        String expected = null;
+//
+//        assertEquals(expected, actual);
+//
+//    }
 
     @Test
     void shouldAddPlayerTimeToTime() {
