@@ -73,11 +73,6 @@ public class GameStoreTest {
         String[] actual = {store.getMostPlayer()};
         String[] expected = {"Bob"};
 
-<<<<<<< HEAD
-        assertEquals(expected,actual);
-=======
-        assertArrayEquals(expected, actual);
->>>>>>> 333f6680c937daff672dc9e494d27a36170a3e71
 
         // если кол-во часов менее 1 часа(включительно), то работа метода ломается.
     }
@@ -145,6 +140,7 @@ public class GameStoreTest {
 
         assertFalse(store.containsGame(game1));
     }
+
     @Test
     void shouldCompareEqualPlayedTime() {
         GameStore store = new GameStore();
@@ -158,10 +154,11 @@ public class GameStoreTest {
         String[] expected = {"Aaron", "Bob"};
         String[] actual = {store.getMostPlayer()};
 
-        assertArrayEquals(expected,actual);
+        assertArrayEquals(expected, actual);
 
         // не предусмотрена ситуация, в которой время равно.
     }
+
     @Test
     public void shouldAddPlayTimeLessThenZero() {
         GameStore store = new GameStore();
