@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -78,6 +79,10 @@
   <component name="RunManager" selected="JUnit.GameStoreTest.shouldAddGame">
     <configuration name="GameStoreTest.publishBlankGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
 >>>>>>> 8be551402fd790a5fe22daa46349e8989e50e42d
+=======
+  <component name="RunManager" selected="JUnit.GameStoreTest">
+    <configuration name="GameStoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 8e4ea6fbe7404006f1986a2690c1a503838423db
       <module name="teamTask" />
 >>>>>>> 71c815ca1d0d8dae239f95de90bb4b95d35fefd1
       <extension name="coverage">
@@ -88,21 +93,29 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <option name="METHOD_NAME" value="shouldAddGame" />
 =======
       <option name="METHOD_NAME" value="shouldAddDuplicated" />
 >>>>>>> 71c815ca1d0d8dae239f95de90bb4b95d35fefd1
       <option name="TEST_OBJECT" value="method" />
+=======
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> 8e4ea6fbe7404006f1986a2690c1a503838423db
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <configuration name="GameStoreTest.shouldAddPlayerTimeLessThenOneHour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqateam" />
 =======
     <configuration name="GameStoreTest.shouldAddPlayTimeLessThenZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="GameStoreTest.shouldAddPlayerTimeLessThenOneHour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 8e4ea6fbe7404006f1986a2690c1a503838423db
       <module name="teamTask" />
 >>>>>>> 71c815ca1d0d8dae239f95de90bb4b95d35fefd1
       <extension name="coverage">
@@ -113,6 +126,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <option name="METHOD_NAME" value="shouldAddPlayerTimeLessThenOneHour" />
 =======
@@ -182,6 +196,9 @@
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
       <option name="METHOD_NAME" value="shouldReturnAllPlayedTimeSum" />
+=======
+      <option name="METHOD_NAME" value="shouldAddPlayerTimeLessThenOneHour" />
+>>>>>>> 8e4ea6fbe7404006f1986a2690c1a503838423db
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -189,6 +206,7 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <item itemvalue="JUnit.GameStoreTest.shouldAddPlayerTimeLessZero" />
         <item itemvalue="JUnit.GameStoreTest.shouldAddPlayerTimeLessThenOneHour" />
@@ -265,4 +283,11 @@
       </pinned-members>
     </pin-to-top-manager>
   </component>
+=======
+        <item itemvalue="JUnit.GameStoreTest" />
+        <item itemvalue="JUnit.GameStoreTest.shouldAddPlayerTimeLessThenOneHour" />
+      </list>
+    </recent_temporary>
+  </component>
+>>>>>>> 8e4ea6fbe7404006f1986a2690c1a503838423db
 </project>
