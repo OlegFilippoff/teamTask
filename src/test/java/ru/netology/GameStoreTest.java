@@ -42,10 +42,10 @@ public class GameStoreTest {
         Player player1 = new Player("Aaron");
         store.addPlayTime(player1.getName(), 5);
 
-        String actual = store.getMostPlayer();
-        String expected = "Aaron";
+        String[] actual = {store.getMostPlayer()};
+        String[] expected = {"Aaron"};
 
-        assertEquals(expected, actual);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -70,28 +70,18 @@ public class GameStoreTest {
         store.addPlayTime(player1.getName(), 0);
         store.addPlayTime(player2.getName(), 1);
 
-        String actual = store.getMostPlayer();
-        String expected = "Bob";
+        String[] actual = {store.getMostPlayer()};
+        String[] expected = {"Bob"};
 
+<<<<<<< HEAD
         assertEquals(expected,actual);
+=======
+        assertArrayEquals(expected, actual);
+>>>>>>> 333f6680c937daff672dc9e494d27a36170a3e71
 
         // если кол-во часов менее 1 часа(включительно), то работа метода ломается.
     }
 
-//    @Test
-//    void shouldAddPlayerTimeLessZero() {
-//        GameStore store = new GameStore();
-//        Player player1 = new Player("Aaron");
-//        Player player2 = new Player("Bob");
-//        store.addPlayTime(player1.getName(), -1);
-//        store.addPlayTime(player2.getName(), -9);
-//
-//        String actual = store.getMostPlayer();
-//        String expected = null;
-//
-//        assertEquals(expected, actual);
-//
-//    }
 
     @Test
     void shouldAddPlayerTimeToTime() {
@@ -121,8 +111,8 @@ public class GameStoreTest {
         store.addPlayTime(player2.getName(), 4);
         store.addPlayTime(player2.getName(), 0);
 
-        String actual = store.getMostPlayer();
-        String expected = "Bob";
+        String[] actual = {store.getMostPlayer()};
+        String[] expected = {"Bob"};
 
         assertEquals(expected, actual);
 
