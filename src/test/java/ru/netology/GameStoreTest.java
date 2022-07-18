@@ -29,10 +29,10 @@ public class GameStoreTest {
         GameStore store = new GameStore();
 
         Game game1 = store.publishGame("Нетология Баттл Онлайн", "Аркады");
-        Game game2 = store.publishGame("Нетология Баттл Онлайн", "Аркады");
+        Game game2 = new Game ("Нетология Баттл Онлайн","Аркады",store);
 
 
-        assertFalse(store.containsGame(game1) && store.containsGame(game2));
+        assertThrows(RuntimeException.class, () -> store.publishGame(game2.getTitle(), game2.getGenre()));
 
     }
 
@@ -42,7 +42,7 @@ public class GameStoreTest {
         Player player1 = new Player("Aaron");
         store.addPlayTime(player1.getName(), 5);
 
-        String[] actual = {store.getMostPlayer()};
+        String[] actual = store.getMostPlayer();
         String[] expected = {"Aaron"};
 
         assertArrayEquals(expected, actual);
@@ -63,14 +63,13 @@ public class GameStoreTest {
     }
 
     @Test
-    void shouldAddPlayerTimeLessThenOneHour() {
+    void shouldAddPlayerTimeOneHour() {
         GameStore store = new GameStore();
         Player player1 = new Player("Aaron");
         Player player2 = new Player("Bob");
-        store.addPlayTime(player1.getName(), 0);
         store.addPlayTime(player2.getName(), 1);
 
-        String[] actual = {store.getMostPlayer()};
+        String[] actual = store.getMostPlayer();
         String[] expected = {"Bob"};
 
 
@@ -101,15 +100,15 @@ public class GameStoreTest {
         GameStore store = new GameStore();
         Player player1 = new Player("Aaron");
         Player player2 = new Player("Bob");
-        store.addPlayTime(player1.getName(), 0);
+        store.addPlayTime(player1.getName(), 1);
         store.addPlayTime(player1.getName(), 3);
         store.addPlayTime(player2.getName(), 4);
-        store.addPlayTime(player2.getName(), 0);
+        store.addPlayTime(player2.getName(), 1);
 
-        String[] actual = {store.getMostPlayer()};
+        String[] actual = store.getMostPlayer();
         String[] expected = {"Bob"};
 
-        assertEquals(expected, actual);
+        assertArrayEquals(expected, actual);
 
         // сложение часов по одному и тому же игроку не выполняется
     }
@@ -152,7 +151,7 @@ public class GameStoreTest {
         store.addPlayTime(player2.getName(), 1);
 
         String[] expected = {"Aaron", "Bob"};
-        String[] actual = {store.getMostPlayer()};
+        String[] actual = store.getMostPlayer();
 
         assertArrayEquals(expected, actual);
 
