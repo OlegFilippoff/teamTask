@@ -27,10 +27,9 @@ public class Player {
      * если игра уже была, никаких изменений происходить не должно
      */
     public void installGame(Game game) {
-        if (game.getTitle().equals(playedTime.keySet())) {
-            return;
+        if (!playedTime.containsKey(game)) {
+            playedTime.put(game, 0);
         }
-        playedTime.put(game, 0);
     }
 
     /**
@@ -42,11 +41,14 @@ public class Player {
      */
 
     public int play(Game game, int hours) throws RuntimeException {
+        if (hours < 0) {
+            throw new RuntimeException("Time can not be negative");
+        }
         game.getStore().addPlayTime(name, hours);
         if (playedTime.containsKey(game)) {
             playedTime.put(game, playedTime.get(game) + hours);
         } else {
-            playedTime.put(game, hours);
+            throw new RuntimeException("Game" + game.getTitle() + "is not installed");
         }
         return playedTime.get(game);
     }
@@ -60,8 +62,6 @@ public class Player {
         for (Game game : playedTime.keySet()) {
             if (game.getGenre().equals(genre)) {
                 sum = sum + playedTime.get(game);
-            } else {
-                sum = 0;
             }
         }
         return sum;
@@ -76,9 +76,8 @@ public class Player {
         Game mostPlayedGame = null;
         for (Game game : playedTime.keySet()
         ) {
-            int genreTime = playedTime.get(game);
-            if (genreTime > mostTime) {
-                mostTime = genreTime;
+            if (game.getGenre().equals(genre) && mostTime < playedTime.get(game)) {
+                mostTime = playedTime.get(game);
                 mostPlayedGame = game;
             }
         }

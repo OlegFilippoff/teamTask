@@ -7,6 +7,7 @@
     <list default="true" id="bb4fa0bf-a1c7-42c4-a6c7-b48d570e4504" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/PlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +28,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JUnit.PlayerTest">
     <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teamTask" />
@@ -66,7 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.shouldMostPlayerByGenre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.addDoubleGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teamTask" />
       <extension name="coverage">
         <pattern>
@@ -76,7 +80,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.PlayerTest" />
-      <option name="METHOD_NAME" value="shouldMostPlayerByGenre" />
+      <option name="METHOD_NAME" value="addDoubleGame" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.addPlayGameNegativeValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teamTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.PlayerTest" />
+      <option name="METHOD_NAME" value="addPlayGameNegativeValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,29 +118,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.shouldThrowRunTimeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="teamTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.PlayerTest" />
-      <option name="METHOD_NAME" value="shouldThrowRunTimeException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PlayerTest" />
-        <item itemvalue="JUnit.PlayerTest.TestSumGenreTwoGames" />
+        <item itemvalue="JUnit.PlayerTest.addDoubleGame" />
+        <item itemvalue="JUnit.PlayerTest.addPlayGameNegativeValue" />
         <item itemvalue="JUnit.PlayerTest.shouldSumGenreIfOneGame" />
-        <item itemvalue="JUnit.PlayerTest.shouldMostPlayerByGenre" />
-        <item itemvalue="JUnit.PlayerTest.shouldThrowRunTimeException" />
+        <item itemvalue="JUnit.PlayerTest.TestSumGenreTwoGames" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +146,17 @@
           <properties class="java.lang.RuntimeException" package="java.lang" />
           <option name="timeStamp" value="14" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/netology/PlayerTest.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="ru.netology.Player" memberName="playedTime" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

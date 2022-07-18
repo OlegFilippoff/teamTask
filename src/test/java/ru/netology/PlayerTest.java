@@ -107,7 +107,7 @@ public class PlayerTest {
         player.installGame(game);
         // player.play(game, -1);
 
-        assertThrows(Exception.class, () -> {
+        assertThrows(RuntimeException.class, () -> {
             player.play(game, -1);
         });
     }
