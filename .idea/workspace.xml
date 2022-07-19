@@ -33,7 +33,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.GameStoreTest">
+  <component name="RunManager" selected="JUnit.GameStoreTest.shouldAddPlayerTimeOneHour">
     <configuration name="GameStoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teamTask" />
       <extension name="coverage">
@@ -65,6 +65,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameStoreTest.shouldAddPlayerTimeOneHour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teamTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
+      <option name="METHOD_NAME" value="shouldAddPlayerTimeOneHour" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameStoreTest.shouldCompareEqualPlayedTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teamTask" />
       <extension name="coverage">
@@ -81,8 +97,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameStoreTest.shouldFindTheMostPlayerTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teamTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.GameStoreTest" />
+      <option name="METHOD_NAME" value="shouldFindTheMostPlayerTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameStoreTest.shouldAddPlayerTimeOneHour" />
+        <item itemvalue="JUnit.GameStoreTest.shouldFindTheMostPlayerTime" />
         <item itemvalue="JUnit.GameStoreTest" />
         <item itemvalue="JUnit.GameStoreTest.shouldCompareEqualPlayedTime" />
         <item itemvalue="JUnit.GameStoreTest.shouldAddPlayerTimeLessThenOneHour" />
