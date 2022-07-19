@@ -11,14 +11,14 @@ import java.util.Map;
 
 public class GameStoreTest {
 
-    @Test
-    public void shouldAddGame() {
-
-        GameStore store = new GameStore();
-        Game game = store.publishGame("Нетология Баттл Онлайн", "Аркады");
-
-        assertTrue(store.containsGame(game));
-
-    }
+//    @Test
+//    public void shouldAddGame() {
+//
+//        GameStore store = new GameStore();
+//        Game game = store.publishGame("Нетология Баттл Онлайн", "Аркады");
+//
+//        assertTrue(store.containsGame(game));
+//
+//    }
 
 }
