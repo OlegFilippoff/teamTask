@@ -1,9 +1,5 @@
-target
-# Default ignored files
-/shelf/
-/workspace.xml
 Thumbs.db*
-.DS_Store
+.DS_Store*
 HELP.md
 .gradle
 build/
@@ -44,5 +40,8 @@ out/
 *.tar.gz
 *.rar
 
-### Node ###
-node_modules/
+### Exclusions ###
+!gradle/wrapper/gradle-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**

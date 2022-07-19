@@ -16,17 +16,6 @@ import java.util.Map;
 public class GameStoreTest {
 
     @Test
-    public void shouldAddGame() {
-
-        GameStore store = new GameStore();
-        Game game = store.publishGame("Нетология Баттл Онлайн", "Аркады");
-
-        assertTrue(store.containsGame(game));
-
-        // Работа метода contains требует доработки
-    }
-
-    @Test
     void shouldAddDuplicated() {
 
         GameStore store = new GameStore();
