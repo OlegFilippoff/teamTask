@@ -29,7 +29,7 @@ public class GameStoreTest {
         GameStore store = new GameStore();
 
         Game game1 = store.publishGame("Нетология Баттл Онлайн", "Аркады");
-        Game game2 = new Game ("Нетология Баттл Онлайн","Аркады",store);
+        Game game2 = new Game("Нетология Баттл Онлайн", "Аркады", store);
 
 
         assertThrows(RuntimeException.class, () -> store.publishGame(game2.getTitle(), game2.getGenre()));

@@ -108,14 +108,6 @@ public class GameStore {
      * Суммирует общее количество времени всех игроков, проведённого
      * за играми этого каталога
      */
-    //public int getSumPlayedTime() {
-    //    int sum = 0;
-    //    ArrayList<Integer> playedHours = new ArrayList<>(playedTime.values());
-    //    for (Integer hours : playedHours) {
-    //        sum += hours;
-     //   }
-    //    return sum;
-   // }
 
     public int getSumPlayedTime() {
         int playedTimeSum = 0;
